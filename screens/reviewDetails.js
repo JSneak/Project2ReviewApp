@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import { globalStyles } from '../styles/global';
+import Card from '../shared/card'
 
 
 const ReviewDetails = ({ navigation, route }) => {
@@ -13,10 +14,11 @@ const ReviewDetails = ({ navigation, route }) => {
 
     return (
         <View style={globalStyles.container}>
-            <Text style={globalStyles.titleText}>Review Screen</Text>
-            <Text>{title}</Text>
-            <Text>{body}</Text>
-            <Text>{rating}</Text>
+            <Card>
+                <Text>{title}</Text>
+                <Text>{body}</Text>
+                <Text>{rating}</Text>
+            </Card>
         </View>
     )
 }
