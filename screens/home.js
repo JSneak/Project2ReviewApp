@@ -5,6 +5,7 @@ import { globalStyles } from '../styles/global';
 import { useNavigation } from '@react-navigation/native';
 import { MaterialIcons } from '@expo/vector-icons';
 import Card from '../shared/card'
+import ReviewForm from './reviewForm'
 
 const Home = () => {
 
@@ -29,7 +30,7 @@ const Home = () => {
                         style={{...styles.modalToggle, ...styles.modalClose}}
                         onPress={() => setModalOpen(false)}
                     />
-                    <Text>Hello from the Modal</Text>
+                    <ReviewForm />
                 </View>
             </Modal>
 
