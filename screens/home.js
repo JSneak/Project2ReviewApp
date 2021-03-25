@@ -2,9 +2,12 @@ import React, { useState } from 'react';
 import { View, Text, FlatList } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { globalStyles } from '../styles/global';
+import { useNavigation } from '@react-navigation/native';
 import Card from '../shared/card'
 
-const Home = ({ navigation }) => {
+const Home = () => {
+
+    const navigation = useNavigation();
 
     const [reviews, setReviews] = useState([
         { title: 'Zelda, Breath of Fresh Air', rating: 5, body: 'lorem ipsum', key: '1' },

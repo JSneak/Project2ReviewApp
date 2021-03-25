@@ -25,12 +25,13 @@ export const HomeStack = () => (
       options={{
         title: 'Review Details',
         headerStyle: {
-          backgroundColor: 'navy',
+          backgroundColor: '#fff',
         },
-        headerTintColor: '#fff',
+        headerTintColor: 'blue',
         headerTitleStyle: {
           fontWeight: 'bold',
         },
+        headerTitleAlign: "center",
       }}/>
   </Stack.Navigator>
 );
